@@ -1,0 +1,121 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e8f5e9;
+}
+
+/* Main heading styles */
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2e7d32;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Main container styles */
+main {
+    height: 100vh;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Common styles for both sections */
+.section {
+    padding: 20px;
+}
+
+/* List section styles */
+#list {
+    flex: 2;
+    background-color: #c8e6c9;
+    border-right: 1px solid #81c784;
+}
+
+#list h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+/* Form section styles */
+#form {
+    flex: 1;
+    background-color: #fff;
+}
+
+#form h2 {
+    color: #388e3c;
+    margin-bottom: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #list, #form {
+        flex: none;
+        width: 100%;
+    }
+
+    #list {
+        border-right: none;
+        border-bottom: 1px solid #81c784;
+    }
+}
+
+/* Additional styles for potential elements */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #81c784;
+    border-radius: 5px;
+}
+
+/* Table styles for potential list items */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #a5d6a7;
+}
+
+th {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #e8f5e9;
+}
